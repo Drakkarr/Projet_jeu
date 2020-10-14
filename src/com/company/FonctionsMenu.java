@@ -1,6 +1,20 @@
 package com.company;
 
 public class FonctionsMenu {
+
+        public static void FonctionDemarrage(){
+
+            /**
+             * Affichage de la fonction démarrage
+             */
+
+            System.out.println("Bonjour et Bienvenue !" );
+            System.out.println("Tape 1 pour voir les règles");
+            System.out.println("Tape 2 pour démarrer une partie");
+            System.out.println("Tape 3 pour voir le score");
+            System.out.println("Tape 4 pour quitter la partie");
+        }
+
     public static void reglesDuJeu() {
         System.out.println("//-REGLES DU JEU-//");
         System.out.println("--A chaque tour vous pouvez vous déplacer horizontalement ou verticalement--");
