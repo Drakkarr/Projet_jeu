@@ -13,6 +13,9 @@ public class PlateauDeJeu {
         for (ligne=0; ligne<=9; ligne++){
             for (colonne =0; colonne<=10; colonne++){
                 matrice[ligne][colonne] = "*";
+                if (ligne ==4 && colonne==5){
+                    matrice[ligne][colonne] = "B";
+                }
                 if (ligne ==5 && colonne==5){
                     matrice[ligne][colonne] = "R";
                 }
