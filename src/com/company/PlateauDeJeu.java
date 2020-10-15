@@ -215,15 +215,18 @@ public class PlateauDeJeu {
             else{
                 System.out.println("commande non valide");
             }
-                System.out.println(pseudoCurrentPlayer + " a toi de jouer");
+                System.out.println(pseudoCurrentPlayer + " a toi de détruire une case");
 
                 // Fin de la double boucle
 
                 // Variable permettant de choisir une ligne
-                int choixP1ligne = inputValueLigne();
+                System.out.println("Entrez un numéro de ligne");
+                int choixP1colonne = inputValueColonne();
+
 
                 // Variable permettant de choisir une colonne
-                int choixP1colonne = inputValueColonne();
+                System.out.println("Entrez un numéro de colonne");
+                int choixP1ligne = inputValueLigne();
 
 
                 if (currentPlayer == p1) {
