@@ -95,6 +95,7 @@ public class PlateauDeJeu {
             }
             //saute une ligne
             System.out.println(" | ");
+            System.out.println("  ---|---|---|---|---|---|---|---|---|---|--- ");
         }
 
         while (true) {
@@ -106,7 +107,7 @@ public class PlateauDeJeu {
                 for (int i = 0; i <= 9; i++) { // Double boucle for pour vérifier tout le tableau
                     for (int j = 0; j <= 10; j++) {
                         if (matrice[i][j] == currentPlayer) { // Si dans la case il y a le joueur actuel
-                            if(i > 0 && (matrice[i+1][j] ==  ANSI_YELLOW+ "*"+ ANSI_RESET)) {// Sorti de tableau et si la case prochaine est vide
+                            if(i > 0 && (matrice[i-1][j] ==  ANSI_YELLOW+ "*"+ ANSI_RESET)) {// Sorti de tableau et si la case prochaine est vide
                                 matrice[i][j] = ANSI_YELLOW+ "*"+ ANSI_RESET; // efface précédente position
                                 matrice[i - 1][j] = currentPlayer; // se déplace
                             }
@@ -130,22 +131,20 @@ public class PlateauDeJeu {
                     }
                 }
             }
-            else if(recupmouvementJoueur.equals("q")){ // Mouvement vers la gauche
+            else if(recupmouvementJoueur.equals("q")) { // Mouvement vers la gauche
                 for (int i = 0; i <= 9; i++) { // Double boucle for pour vérifier tout le tableau
                     for (int j = 0; j <= 10; j++) {
                         if (matrice[i][j] == currentPlayer) {// Si dans la case il y a le joueur actuel
-                            if(j > 0 && (matrice[i][j - 1] ==  ANSI_YELLOW+ "*"+ ANSI_RESET)){ // Sorti de tableau et si la case prochaine est vide
-                                matrice[i][j] =  ANSI_YELLOW+ "*"+ ANSI_RESET; // efface précédente position
+                            if (j > 0 && (matrice[i][j - 1] == ANSI_YELLOW + "*" + ANSI_RESET)) { // Sorti de tableau et si la case prochaine est vide
+                                matrice[i][j] = ANSI_YELLOW + "*" + ANSI_RESET; // efface précédente position
                                 matrice[i][j - 1] = currentPlayer; // se déplace
-                            }else
-                                System.out.println(currentPlayer);
+                            }
+
+
                         }
-
-
                     }
                 }
-            }
-            else if(recupmouvementJoueur.equals("d")){ // Mouvement vers la droite
+            }else if(recupmouvementJoueur.equals("d")){ // Mouvement vers la droite
                 for (int i = 0; i <= 9; i++) { // Double boucle for pour vérifier tout le tableau
                     for (int j = 0; j <= 10; j++) {
                         if (matrice[i][j] == currentPlayer) { // Si dans la case il y a le joueur actuel
@@ -162,13 +161,15 @@ public class PlateauDeJeu {
             else{
                 System.out.println("commande non valide");
             }
-            System.out.println(pseudoCurrentPlayer + " a toi de jouer");
+            System.out.println(pseudoCurrentPlayer + " détruis une case");
 
+            System.out.println("choisis un numéro de ligne");
             //déclarer une variable pour choisir une ligne
             int choixP1ligne = inputValueLigne();
+
+            System.out.println("choisis un numéro de colonne");
             //déclarer une variable pour choisir une colonne
             int choixP1colonne = inputValueColonne();
-
 
             if (currentPlayer==p1){
                 //si joueur = p1 et que la case séléctionnée est déjà détruite ou occupée par un joueur, p1 rejoues
@@ -201,6 +202,7 @@ public class PlateauDeJeu {
                 }
                     //saute une ligne
                     System.out.println(" | ");
+                    System.out.println("  ---|---|---|---|---|---|---|---|---|---|--- ");
             }
         }
     }
