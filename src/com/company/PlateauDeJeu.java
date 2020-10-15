@@ -221,12 +221,12 @@ public class PlateauDeJeu {
 
                 // Variable permettant de choisir une ligne
                 System.out.println("Entrez un numéro de ligne");
-                int choixP1colonne = inputValueColonne();
-
+                int choixP1ligne = inputValueLigne();
 
                 // Variable permettant de choisir une colonne
                 System.out.println("Entrez un numéro de colonne");
-                int choixP1ligne = inputValueLigne();
+                int choixP1colonne = inputValueColonne();
+
 
 
                 if (currentPlayer == p1) {
