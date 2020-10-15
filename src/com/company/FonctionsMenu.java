@@ -7,11 +7,14 @@ public class FonctionsMenu {
             /**
              * Affichage de la fonction démarrage au lancement du programme
              */
+            //Déclaration couleur
+            final String ANSI_RESET = "\u001B[0m";
+            final String ANSI_RED = "\u001B[31m";
 
-            System.out.println("|---------------------------|");
-            System.out.println("| Bonjour et Bienvenue dans |" );
-            System.out.println("| !!SUPER DESTRUCTOR 3000!! |");
-            System.out.println("|---------------------------|");
+            System.out.println(ANSI_RED +"|---------------------------|"+ ANSI_RESET);
+            System.out.println(ANSI_RED +"| Bonjour et Bienvenue dans |"+ ANSI_RESET);
+            System.out.println(ANSI_RED +"| !!SUPER DESTRUCTOR 3000!! |"+ ANSI_RESET);
+            System.out.println(ANSI_RED +"|---------------------------|"+ ANSI_RESET);
             System.out.println("Tape 1 pour voir les règles");
             System.out.println("Tape 2 pour démarrer une partie");
             System.out.println("Tape 3 pour voir le score");
