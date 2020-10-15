@@ -44,8 +44,8 @@ public class Main {
          * Le but du jeu est de coincé l'adversaire, dans ce cas :
          * C'EST GAGNE.
          */
-        FonctionsMenu.FonctionDemarrage();
 
+        FonctionsMenu.FonctionDemarrage();
 
         /**
          * Le Scanner scannerMenu a pour utilité de pouvoir noter dans la console.
