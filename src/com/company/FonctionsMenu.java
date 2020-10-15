@@ -5,15 +5,30 @@ public class FonctionsMenu {
         public static void FonctionDemarrage(){
 
             /**
-             * Affichage de la fonction démarrage
+             * Affichage de la fonction démarrage au lancement du programme
              */
 
-            System.out.println("Bonjour et Bienvenue !" );
+            System.out.println("|---------------------------|");
+            System.out.println("| Bonjour et Bienvenue dans |" );
+            System.out.println("| !!SUPER DESTRUCTOR 3000!! |");
+            System.out.println("|---------------------------|");
             System.out.println("Tape 1 pour voir les règles");
             System.out.println("Tape 2 pour démarrer une partie");
             System.out.println("Tape 3 pour voir le score");
             System.out.println("Tape 4 pour quitter la partie");
         }
+
+    public static void FonctionRedemarrage(){
+
+        /**
+         * Affichage de la fonction redémarrage lorsque je reviens dans le menu
+         */
+
+        System.out.println("Tape 1 pour voir les règles");
+        System.out.println("Tape 2 pour démarrer une partie");
+        System.out.println("Tape 3 pour voir le score");
+        System.out.println("Tape 4 pour quitter la partie");
+    }
 
         public static void reglesDuJeu() {
 
@@ -32,6 +47,7 @@ public class FonctionsMenu {
             System.out.println("--A chaque tour les joueurs doivent séléctionner une case à détruire--");
             System.out.println("--Le but du jeu est de coincé l'adversaire, dans ce cas :");
             System.out.println("C'EST GAGNE--");
+            System.out.println();
 
         }
 }
