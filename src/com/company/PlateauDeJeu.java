@@ -88,14 +88,21 @@ public class PlateauDeJeu {
 
             }
         }
+        System.out.println("    0   1   2   3   4   5   6   7   8   9  10");
         //afficher toutes les cases
+        int ligneConteur=0;
         for (ligne = 0; ligne <= 9; ligne++) {
             for (colonne = 0; colonne <= 10; colonne++) {
+
+                if (colonne==0){
+                    System.out.print(ligneConteur);
+                    ligneConteur++;
+                }
                 System.out.print(" | " + matrice[ligne][colonne]);
             }
             //saute une ligne
             System.out.println(" | ");
-            System.out.println("  ---|---|---|---|---|---|---|---|---|---|--- ");
+            System.out.println("   ---|---|---|---|---|---|---|---|---|---|--- ");
         }
 
         while (true) {
@@ -194,15 +201,21 @@ public class PlateauDeJeu {
                     pseudoCurrentPlayer = pseudoJoueur1;
                 }
             }
-
-            //afficher les cases
+            System.out.println("    0   1   2   3   4   5   6   7   8   9  10");
+            //afficher toutes les cases
+            ligneConteur=0;
             for (ligne = 0; ligne <= 9; ligne++) {
                 for (colonne = 0; colonne <= 10; colonne++) {
+
+                    if (colonne==0){
+                        System.out.print(ligneConteur);
+                        ligneConteur++;
+                    }
                     System.out.print(" | " + matrice[ligne][colonne]);
                 }
-                    //saute une ligne
-                    System.out.println(" | ");
-                    System.out.println("  ---|---|---|---|---|---|---|---|---|---|--- ");
+                //saute une ligne
+                System.out.println(" | ");
+                System.out.println("   ---|---|---|---|---|---|---|---|---|---|--- ");
             }
         }
     }
