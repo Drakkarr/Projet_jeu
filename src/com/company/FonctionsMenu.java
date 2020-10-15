@@ -11,7 +11,7 @@ public class FonctionsMenu {
             final String ANSI_RESET = "\u001B[0m";
             final String ANSI_RED = "\u001B[31m";
 
-            System.out.println(ANSI_RED +"|---------------------------|"+ ANSI_RESET);
+            System.out.println(ANSI_RED + "|---------------------------|"+ ANSI_RESET);
             System.out.println(ANSI_RED +"| Bonjour et Bienvenue dans |"+ ANSI_RESET);
             System.out.println(ANSI_RED +"| !!SUPER DESTRUCTOR 3000!! |"+ ANSI_RESET);
             System.out.println(ANSI_RED +"|---------------------------|"+ ANSI_RESET);
