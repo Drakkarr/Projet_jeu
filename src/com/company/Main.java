@@ -29,6 +29,9 @@ public class Main {
             // Si l'utilisateur saisi "3" lance l'historique des parties
             else if (recupScannerMenu.equals("3")) {
                 System.out.println("Historique parti");
+
+                FonctionsMenu.FonctionRedemarrage();
+                recupScannerMenu = scannerMenu.next();
             }
             // Si l'utilisateur saisi "4" quitte le jeu
             else if (recupScannerMenu.equals("4")) {
@@ -38,6 +41,9 @@ public class Main {
             // Si l'utilisateur saisi une autre commande que celles proposées message + relance le menu
             else {
                 System.out.println("Commande non valide");
+
+                FonctionsMenu.FonctionRedemarrage();
+                recupScannerMenu = scannerMenu.next();
             }
         }
     }
