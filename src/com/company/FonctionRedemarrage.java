@@ -18,6 +18,6 @@ public class FonctionRedemarrage {
         System.out.println("Tape 1 pour voir les règles");
         System.out.println("Tape 2 pour démarrer une partie");
         System.out.println("Tape 3 pour voir le score");
-        System.out.println("Tape 4 pour quitter la partie");
+        System.out.println("Tape 4 pour quitter le jeu");
     }
 }
