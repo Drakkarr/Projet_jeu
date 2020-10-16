@@ -30,8 +30,7 @@ public class PlateauDeJeu {
 
         // Scanner permettant de récupérer le numéro de la colonne.
         Scanner scanneur = new Scanner(System.in);
-        int récupérationColonne = scanneur.nextInt();
-        return récupérationColonne;
+        return scanneur.nextInt();
 
     }
 
@@ -78,8 +77,8 @@ public class PlateauDeJeu {
 
         // Variables permettant de choisir aléatoirement le pion et la couleur.
 
-        String joueurActuel = null;
-        String pseudoJoueurActuel = null;
+        String joueurActuel;
+        String pseudoJoueurActuel;
 
         // Création d'un random (aléatoire) entre 1 et 2 pour générer un nombre aléatoire.
 
@@ -94,7 +93,7 @@ public class PlateauDeJeu {
 
             // Si le chiffre aléatoire est 1, c'est au joueur p2 de jouer.
 
-        } else if (chiffreAléatoire % 2 != 0) {
+        } else {
             joueurActuel = p2;
             pseudoJoueurActuel = pseudoJoueur2;
         }
@@ -104,7 +103,7 @@ public class PlateauDeJeu {
 
         int ligne;
         int colonne;
-        int stop = 0;
+        int stop;
 
 
         // Création d'une double boucle for à plusieurs conditions pour remplir toutes les cases.
