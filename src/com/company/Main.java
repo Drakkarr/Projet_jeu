@@ -13,7 +13,7 @@ public class Main {
      * @see reglesDuJeu
      * @see FonctionRedemarrage
      * @see PlateauDeJeu
-     * La fonction FonctionsMenu.FonctionDemarrage est appelé pour présenter le début du jeu.
+     * La fonction FonctionsMenu.FonctionDemarrage est appelée pour présenter le début du jeu.
      * La boucle while sert à appeler la FonctionsMenu.FonctionDemarrage.
      * Celle-ci a pour but de se répéter et de représenter le menu du jeu.
      * La classe Main a pour fonctionnalité le démarrage du jeu avec un menu.

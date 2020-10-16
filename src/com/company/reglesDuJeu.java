@@ -7,7 +7,7 @@ public class reglesDuJeu {
         /**
          * Cette fonction reglesDuJeu est caractérisée par les informations suivantes:
          * @see reglesDuJeu
-         * La fonction reglesDuJeu permet d'avoir un rappelle des règles du jeu :
+         * La fonction reglesDuJeu permet d'avoir un rappel des règles du jeu :
          * REGLES DU JEU :
          * A chaque tour vous pouvez vous déplacer horizontalement ou verticalement.
          * Appuyez sur les touches suivantes pour vous déplacer dans la direction.
@@ -31,7 +31,7 @@ public class reglesDuJeu {
         System.out.println("/Bas --> S");
         System.out.println();
         System.out.println("--A chaque tour les joueurs doivent séléctionner une case à détruire--");
-        System.out.println("--Le but du jeu est de coincé l'adversaire, dans ce cas :");
+        System.out.println("--Le but du jeu est de coincer l'adversaire, dans ce cas :");
         System.out.println("C'EST GAGNE--");
         System.out.println();
     }

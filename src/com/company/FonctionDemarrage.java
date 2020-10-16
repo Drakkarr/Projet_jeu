@@ -27,15 +27,15 @@ public class FonctionDemarrage {
 
         // Déclaration de la variable couleur
 
-        final String ANSI_RESET = "\u001B[0m";
-        final String ANSI_RED = "\u001B[31m";
+        final String réinitialisationCouleur = "\u001B[0m";
+        final String couleurRouge = "\u001B[31m";
 
         // Affichage de la fonction FonctionDemarrage
 
-        System.out.println(ANSI_RED + "|---------------------------|" + ANSI_RESET);
-        System.out.println(ANSI_RED + "| Bonjour et Bienvenue dans |" + ANSI_RESET);
-        System.out.println(ANSI_RED + "| !!SUPER DESTRUCTOR 3000!! |" + ANSI_RESET);
-        System.out.println(ANSI_RED + "|---------------------------|" + ANSI_RESET);
+        System.out.println(couleurRouge + "|---------------------------|" + réinitialisationCouleur);
+        System.out.println(couleurRouge + "| Bonjour et Bienvenue dans |" + réinitialisationCouleur);
+        System.out.println(couleurRouge + "| !!SUPER DESTRUCTOR 3000!! |" + réinitialisationCouleur);
+        System.out.println(couleurRouge + "|---------------------------|" + réinitialisationCouleur);
         System.out.println("Tape 1 pour voir les règles");
         System.out.println("Tape 2 pour démarrer une partie");
         System.out.println("Tape 3 pour voir le score");
