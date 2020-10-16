@@ -44,18 +44,30 @@ public class PlateauDeJeu {
         final String couleurJaune = "\u001B[33m";
         final String couleurBleue = "\u001B[34m";
 
-        // Scanneur permettant d'entrer un pseudo pour le joueur 1
-
-        Scanner scanneurPseudoJoueur1 = new Scanner(System.in);
-        System.out.println("Joueur 1 entre ton pseudo, tu seras le pion bleu");
-        String pseudoJoueur1 = scanneurPseudoJoueur1.next();
-
+        // Scanneur permettant d'entrer un pseudo pour le joueur 1 entre 2 et 10 caractères
+        String pseudoJoueur1;
+        System.out.println("Joueur 1 entre ton pseudo entre 2 et 10 caractères, tu seras le pion bleu");
+        while (true) {
+            Scanner scanneurPseudoJoueur1 = new Scanner(System.in);
+            pseudoJoueur1 = scanneurPseudoJoueur1.next();
+            if (pseudoJoueur1.length()<=10 && pseudoJoueur1.length()  >=2){
+                break;
+            }else{
+                System.out.println("merci d'entrer un pseudo entre 2 et 10 caractères");
+            }
+        }
         // Scanneur permettant d'entrer un pseudo pour le joueur 2
-
-        Scanner scanneurPseudoJoueur2 = new Scanner(System.in);
-        System.out.println("Joueur 2 entre ton pseudo, tu seras le pion rouge");
-        String pseudoJoueur2 = scanneurPseudoJoueur2.next();
-
+        String pseudoJoueur2;
+        System.out.println("Joueur 2 entre ton pseudo entre 2 et 10 caractères, tu seras le pion rouge");
+        while (true) {
+            Scanner scanneurPseudoJoueur2 = new Scanner(System.in);
+            pseudoJoueur2 = scanneurPseudoJoueur2.next();
+            if (pseudoJoueur2.length()<= 10 && pseudoJoueur2.length()>=2){
+                break;
+            }else{
+                System.out.println("merci d'entrer un pseudo entre 2 et 10 caractères");
+            }
+        }
         // Variable permettant d'assigner au joueur1 le pion B et la couleur bleue
 
         String p1 = couleurBleue + "B" + réinitialisationCouleur;
